@@ -5,8 +5,9 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Header />
-      <List />
+      page
+      {/* <Header />
+      <List /> */}
     </div>
   );
 }
