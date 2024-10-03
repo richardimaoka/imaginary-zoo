@@ -4,7 +4,6 @@
     minmax(30px, 1fr) /* minimum padding = 30px */
     auto
     minmax(auto, 900px)
-    auto
     minmax(30px, 1fr); /* minimum padding = 30px */
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
@@ -14,12 +13,12 @@
   min-height: 100svh;
 }
 
-.header {
+.component > div:first-child {
   grid-area: header;
   background-color: antiquewhite;
 }
 
-.sideA {
+.component > div:nth-child(2) {
   grid-area: sideA;
   background-color: aliceblue;
 }
@@ -27,11 +26,6 @@
 .main {
   grid-area: main;
   background-color: sandybrown;
-}
-
-.sideB {
-  grid-area: sideB;
-  background-color: seashell;
 }
 
 .footer {
