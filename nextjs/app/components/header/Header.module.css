@@ -1,6 +1,7 @@
 .component {
   display: grid;
   grid-template-columns:
+    1fr /* empty spacing*/
     auto /* logo */
     auto /* ニュース */
     auto /* どうぶつ */
@@ -8,15 +9,16 @@
     auto /* 園内マップ */
     auto /* アクセス */
     auto /* 料金案内 */
-    1fr;
+    auto /* search box */
+    1fr; /* empty spacing*/
   column-gap: 20px;
   align-items: center;
 
   /* other header settings */
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   color: white;
   background-color: rgb(182, 182, 182);

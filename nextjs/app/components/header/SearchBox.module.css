@@ -1,0 +1,22 @@
+.component {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+
+  background-color: rgb(245, 245, 245);
+  max-width: 30rem;
+
+  padding: 4px;
+}
+
+.input {
+  border-style: none;
+  outline-style: none;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  background-color: transparent;
+}

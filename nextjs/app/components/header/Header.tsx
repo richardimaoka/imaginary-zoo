@@ -1,6 +1,7 @@
 import styles from "./Header.module.css";
 import { LinkInternal } from "./LinkInternal";
 import { Logo } from "./Logo";
+import { SearchBox } from "./SearchBox";
 
 export function Header() {
   const links = [
@@ -14,10 +15,13 @@ export function Header() {
 
   return (
     <div className={styles.component}>
+      <div /* empty spacing */ />
       <Logo />
       {links.map((x) => (
         <LinkInternal key={x.name} name={x.name} path={x.path} />
       ))}
+      <SearchBox />
+      <div /* empty spacing */ />
     </div>
   );
 }
