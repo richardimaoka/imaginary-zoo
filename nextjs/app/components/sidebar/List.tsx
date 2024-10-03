@@ -1,3 +1,4 @@
+import { CategoryBird } from "./CategoryBird";
 import styles from "./List.module.css";
 import { ListItem } from "./ListItem";
 
@@ -487,6 +488,7 @@ export function List() {
 
   return (
     <div className={styles.component}>
+      <CategoryBird />
       {links.map((y) => (
         <div key={y.category.name}>
           <div>{y.category.name}</div>
