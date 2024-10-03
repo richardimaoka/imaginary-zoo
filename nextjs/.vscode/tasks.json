@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Create .tsx and .module.css",
+      "type": "shell",
+      "command": "touch ${fileDirname}/${input:fileinput}.tsx && touch ${fileDirname}/${input:fileinput}.module.css",
+      // https://stackoverflow.com/questions/56519017/fix-continue-without-scanning-the-task-output-in-visual-studio-code
+      // https://code.visualstudio.com/docs/editor/tasks#_processing-task-output-with-problem-matchers
+      "problemMatcher": [],
+      // The below is NOT to show the terminal on running the task, and close the terminal window for the task (otherwise it remains in Terminal panel)
+      "presentation": {
+        "reveal": "never",
+        "close": true
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "fileinput",
+      "type": "promptString",
+      "description": "input file name prompt"
+    }
+  ]
+}
