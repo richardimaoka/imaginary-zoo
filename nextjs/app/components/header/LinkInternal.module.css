@@ -1,0 +1,27 @@
+.component {
+  /* Cancel the default <a> decoration */
+  text-decoration: none;
+  color: inherit;
+
+  /* Grid to place .name and .line on the same area */
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "inner"; /* .line is overlayed on .name in the same area */
+
+  > .name {
+    grid-area: inner; /* same area */
+    color: rgb(0, 0, 0);
+  }
+
+  > .name.current {
+    color: rgb(8, 8, 8);
+  }
+
+  > .line {
+    grid-area: inner; /* same area */
+    align-self: stretch;
+    border-bottom: 4px solid rgb(255, 255, 255);
+  }
+}

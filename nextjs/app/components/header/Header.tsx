@@ -1,14 +1,23 @@
 import styles from "./Header.module.css";
+import { LinkInternal } from "./LinkInternal";
 import { Logo } from "./Logo";
 
 export function Header() {
+  const links = [
+    { name: "ニュース", path: "/news" },
+    { name: "どうぶつ", path: "/animals" },
+    { name: "ショップ", path: "/shop" },
+    { name: "園内マップ", path: "/map" },
+    { name: "アクセス", path: "/access" },
+    { name: "料金案内", path: "/pricing" },
+  ];
+
   return (
     <div className={styles.component}>
       <Logo />
-      <div>item1</div>
-      <div>item2</div>
-      <div>item3</div>
-      <div>item4</div>
+      {links.map((x) => (
+        <LinkInternal key={x.name} name={x.name} path={x.path} />
+      ))}
     </div>
   );
 }
