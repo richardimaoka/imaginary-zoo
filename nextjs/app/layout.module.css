@@ -1,34 +1,5 @@
-.component {
+.container {
   display: grid;
-  grid-template-columns:
-    minmax(30px, 1fr) /* minimum padding = 30px */
-    auto
-    minmax(auto, 900px)
-    minmax(30px, 1fr); /* minimum padding = 30px */
   grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-    "header  header header header header"
-    ".       sideA  main   sideB  ."
-    "footer  footer footer footer footer";
   min-height: 100svh;
-}
-
-.component > div:first-child {
-  grid-area: header;
-  background-color: antiquewhite;
-}
-
-.component > div:nth-child(2) {
-  grid-area: sideA;
-  background-color: aliceblue;
-}
-
-.main {
-  grid-area: main;
-  background-color: sandybrown;
-}
-
-.footer {
-  grid-area: footer;
-  background-color: paleturquoise;
 }

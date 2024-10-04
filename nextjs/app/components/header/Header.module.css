@@ -1,7 +1,20 @@
-.component {
+.container {
   display: grid;
   grid-template-columns:
-    1fr /* empty spacing*/
+    minmax(16px, 1fr) /* left spacing */
+    minmax(auto, 1200px) /* contents */
+    minmax(16px, 1fr); /* right spacing */
+
+  background-color: rgb(182, 182, 182);
+}
+
+.container > div {
+  grid-column: 2/-2;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns:
     auto /* logo */
     auto /* ニュース */
     auto /* どうぶつ */
@@ -9,19 +22,15 @@
     auto /* 園内マップ */
     auto /* アクセス */
     auto /* 料金案内 */
-    auto /* search box */
-    1fr; /* empty spacing*/
+    1fr; /* search box */
   column-gap: 20px;
   align-items: center;
 
   /* other header settings */
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
 
   color: white;
-  background-color: rgb(182, 182, 182);
 }
 
 .logo {

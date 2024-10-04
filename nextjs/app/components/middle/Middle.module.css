@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-template-columns:
+    minmax(16px, 1fr) /* left spacing, minimum padding 16px */
+    minmax(auto, 1200px) /* contents */
+    minmax(16px, 1fr); /* right spacing, minimum padding 16px */
+}
+
+.container > * {
+  /* contents width, without left & right padding */
+  grid-column: 2/-2;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns:
+    auto
+    minmax(auto, 900px);
+}
