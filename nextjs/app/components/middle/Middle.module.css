@@ -17,3 +17,9 @@
     auto
     minmax(auto, 900px);
 }
+
+.contents > *:first-child {
+  /* sticky header settings */
+  position: sticky;
+  top: 10px;
+}

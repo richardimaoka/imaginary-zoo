@@ -6,6 +6,10 @@
     minmax(16px, 1fr); /* right spacing */
 
   background-color: rgb(182, 182, 182);
+
+  /* sticky header settings */
+  position: sticky;
+  top: 0px;
 }
 
 .container > div {
