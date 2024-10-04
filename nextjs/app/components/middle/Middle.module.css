@@ -16,12 +16,15 @@
   grid-template-columns:
     auto
     minmax(auto, 900px);
+
+  column-gap: 20px;
 }
 
+/* sticky header settings */
 .contents > *:first-child {
-  /* sticky header settings */
-  position: sticky;
-  top: 5rem;
   height: calc(100svh - 5rem);
-  overflow-y: auto;
+
+  /* position: sticky;
+  top: 5rem;
+  overflow-y: auto; */
 }
