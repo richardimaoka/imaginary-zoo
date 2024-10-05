@@ -32,7 +32,7 @@ export default function RootLayout({
         <div className={styles.container}>
           <Header />
           <Middle>{children}</Middle>
-          <div className={styles.footer}>footer</div>
+          {/* <div className={styles.footer}>footer</div> */}
         </div>
       </body>
     </html>

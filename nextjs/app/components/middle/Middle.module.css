@@ -24,7 +24,7 @@
 .contents > *:first-child {
   height: calc(100svh - 5rem);
 
-  /* position: sticky;
+  position: sticky;
   top: 5rem;
-  overflow-y: auto; */
+  overflow-y: auto;
 }
