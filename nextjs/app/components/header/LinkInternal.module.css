@@ -12,7 +12,7 @@
 
   > .name {
     grid-area: inner; /* same area */
-    color: rgb(0, 0, 0);
+    color: rgb(34, 34, 34);
   }
 
   > .name.current {

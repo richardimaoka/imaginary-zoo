@@ -1,4 +1,3 @@
-import { List } from "../sidebar/List";
 import styles from "./Middle.module.css";
 
 interface Props {
@@ -9,7 +8,7 @@ export function Middle(props: Props) {
   return (
     <div className={styles.container}>
       <div className={styles.contents}>
-        <List />
+        <div />
         <div className={styles.main}>{props.children}</div>
       </div>
     </div>
