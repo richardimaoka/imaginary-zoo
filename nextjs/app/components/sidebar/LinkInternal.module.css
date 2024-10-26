@@ -6,6 +6,11 @@
   color: rgb(43, 43, 43);
 }
 
-.component:hover {
+.component.current {
   background-color: rgb(233, 233, 233);
+  font-weight: 500;
+}
+
+.component:hover {
+  background-color: rgb(245, 245, 245);
 }
