@@ -1,0 +1,11 @@
+.component {
+  /* Cancel the default <a> decoration */
+  text-decoration: none;
+  color: inherit;
+
+  color: rgb(43, 43, 43);
+}
+
+.component:hover {
+  background-color: rgb(233, 233, 233);
+}

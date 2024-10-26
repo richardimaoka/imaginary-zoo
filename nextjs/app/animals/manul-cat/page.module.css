@@ -1,0 +1,15 @@
+.page {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.page > img {
+  max-width: 100%;
+  max-height: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.page > h1 {
+  margin-top: 0;
+}
