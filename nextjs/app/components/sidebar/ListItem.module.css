@@ -33,6 +33,24 @@
   }
 }
 
+/* toggle open settings */
+.children {
+  /* https://developer.chrome.com/docs/css-ui/animate-to-height-auto */
+  /* Unsupported browsers do not animate the height with interpolate-size */
+  interpolate-size: allow-keywords;
+  transition-property: height;
+  transition-duration: 0.3s;
+  overflow-y: hidden;
+}
+
+.children.open {
+  height: auto;
+}
+
+.children.close {
+  height: 0px;
+}
+
 .parent {
   /* Cancel the default <a> decoration */
   text-decoration: none;
