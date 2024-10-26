@@ -1,3 +1,13 @@
 .component {
   height: fit-content;
 }
+
+.component::-webkit-scrollbar {
+  width: 8px;
+}
+
+.component:hover::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  width: 6px;
+  border-radius: 5px;
+}
