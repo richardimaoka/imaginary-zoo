@@ -7,7 +7,11 @@
   display: grid;
   grid-template-columns: 1rem /* offset */ 1fr /* 1fr */;
 
-  /* offset and parent form a row */
+  /* line and parent form a row */
+  > .line {
+    grid-column: 1 / 2; /* offset */
+    justify-self: center;
+  }
   > .parent {
     grid-column: 2 / -1; /* 1fr */
   }
@@ -18,8 +22,12 @@
     display: grid;
     grid-template-columns: subgrid; /* use the same grid as parent */
 
-    /* offset and child form a row */
-    & > * {
+    /* line and child form a row */
+    & > .line {
+      grid-column: 1 / 2; /* offset */
+      justify-self: center;
+    }
+    & > *:nth-child(even) {
       grid-column: 2 / -1; /* 1fr */
     }
   }
@@ -41,7 +49,6 @@
 .parent:hover {
   background-color: rgb(245, 245, 245);
 }
-
 
 .line {
   border-right: solid 1px rgb(218, 218, 218);
